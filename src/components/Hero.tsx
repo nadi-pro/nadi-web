@@ -1,86 +1,216 @@
-import Image from 'next/image'
-
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
+import Link from 'next/link'
 
 export function Hero() {
   return (
-    <Container className="pt-20 pb-16 text-center lg:pt-32">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-        Accounting{' '}
-        <span className="relative whitespace-nowrap text-blue-600">
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 418 42"
-            className="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70"
-            preserveAspectRatio="none"
-          >
-            <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z" />
-          </svg>
-          <span className="relative">made simple</span>
-        </span>{' '}
-        for small businesses.
-      </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Most bookkeeping software is accurate, but hard to use. We make the
-        opposite trade-off, and hope you don’t get audited.
-      </p>
-      <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Get 6 months free</Button>
-        <Button
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          variant="outline"
-        >
-          <svg
-            aria-hidden="true"
-            className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
-          >
-            <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
-          </svg>
-          <span className="ml-3">Watch video</span>
-        </Button>
+    <section className="relative min-h-screen bg-white dark:bg-gray-950 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(99,102,241,0.3)_1px,transparent_0)] dark:bg-[radial-gradient(circle_at_1px_1px,rgba(99,102,241,0.2)_1px,transparent_0)] bg-[size:24px_24px] opacity-20" />
+
+      {/* Animated Code Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
+        <div className="absolute top-20 left-10 text-green-500/20 dark:text-green-400/20 text-xs md:text-sm animate-pulse">
+          const nadi = require(&apos;nadi-js&apos;);
+          <br />
+          nadi.init({'{'}apiKey: process.env.API_KEY{'}'});
+        </div>
+        <div className="absolute top-40 right-20 text-blue-500/20 dark:text-blue-400/20 text-xs md:text-sm animate-pulse delay-1000">
+          try {'{'}
+          <br />
+          &nbsp;&nbsp;// Your code here
+          <br />
+          {'}'} catch (error) {'{'}
+          <br />
+          &nbsp;&nbsp;nadi.report(error);
+          <br />
+          {'}'}
+        </div>
+        <div className="absolute bottom-40 left-20 text-purple-500/20 dark:text-purple-400/20 text-xs md:text-sm animate-pulse delay-2000">
+          import {'{'} Nadi {'}'} from &apos;@nadi/core&apos;;
+          <br />
+          export default Nadi.configure({'{...}'});
+        </div>
       </div>
-      <div className="mt-36 lg:mt-44">
-        <p className="font-display text-base text-slate-900">
-          Trusted by these six companies so far
-        </p>
-        <ul
-          role="list"
-          className="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
-        >
-          {[
-            [
-              { name: 'Transistor', logo: logoTransistor },
-              { name: 'Tuple', logo: logoTuple },
-              { name: 'StaticKit', logo: logoStaticKit },
-            ],
-            [
-              { name: 'Mirage', logo: logoMirage },
-              { name: 'Laravel', logo: logoLaravel },
-              { name: 'Statamic', logo: logoStatamic },
-            ],
-          ].map((group, groupIndex) => (
-            <li key={groupIndex}>
-              <ul
-                role="list"
-                className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
-              >
-                {group.map((company) => (
-                  <li key={company.name} className="flex">
-                    <Image src={company.logo} alt={company.name} unoptimized />
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex min-h-screen items-center py-16 md:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center w-full">
+            {/* Left Column: Content */}
+            <div className="text-center lg:text-left space-y-8">
+              {/* Badge */}
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-700/50 rounded-full px-4 py-2 text-sm font-medium text-blue-700 dark:text-blue-300 animate-fadeInUp">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
+                </span>
+                <span>v2.0.0 // Production Ready</span>
+              </div>
+
+              {/* Main Heading */}
+              <div className="space-y-4">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
+                  <span className="block text-gray-900 dark:text-white">
+                    debug().
+                  </span>
+                  <span className="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                    ship().
+                  </span>
+                  <span className="block text-gray-900 dark:text-white">
+                    repeat();
+                  </span>
+                </h1>
+                <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                  Real-time crash reporting and performance monitoring for
+                  developers who care about code quality.{' '}
+                  <span className="text-blue-600 dark:text-blue-400">
+                    // Because every exception tells a story
+                  </span>
+                </p>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link
+                  href="https://app.nadi.pro/register"
+                  className="group inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-xl text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-950 transition-all duration-200 transform hover:scale-105"
+                >
+                  start_coding()
+                  <svg
+                    className="ml-2 w-5 h-5 transition-transform duration-200 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </svg>
+                </Link>
+                <a
+                  href="#demo"
+                  className="group inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-xl text-gray-900 dark:text-white bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-950 transition-all duration-200"
+                >
+                  view_demo()
+                  <svg
+                    className="ml-2 w-5 h-5 transition-transform duration-200 group-hover:scale-110"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m2-5V9a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2h10a2 2 0 002-2v-4"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              {/* Trust Indicators */}
+              <div className="pt-8 border-t border-gray-200 dark:border-gray-800">
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
+                  // Trusted by developers worldwide
+                </p>
+                <div className="grid grid-cols-3 gap-8 text-center">
+                  <div>
+                    <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                      50K+
+                    </div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">
+                      developers
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                      1M+
+                    </div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">
+                      errors_caught
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                      99.9%
+                    </div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">
+                      uptime
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Terminal Demo */}
+            <div className="relative">
+              <div className="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden border border-gray-300 dark:border-gray-700">
+                {/* Terminal Header */}
+                <div className="flex items-center justify-between px-4 py-3 bg-gray-200 dark:bg-gray-800 border-b border-gray-300 dark:border-gray-700">
+                  <div className="flex space-x-2">
+                    <div className="w-3 h-3 bg-red-500 rounded-full" />
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full" />
+                    <div className="w-3 h-3 bg-green-500 rounded-full" />
+                  </div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">
+                    nadi-monitor.js
+                  </div>
+                  <div className="w-16" />
+                </div>
+
+                {/* Terminal Content */}
+                <div className="p-6 text-sm space-y-3 bg-white dark:bg-black">
+                  <div className="text-blue-600 dark:text-blue-400">
+                    $ npm install nadi-js
+                  </div>
+                  <div className="text-gray-500 dark:text-gray-400">
+                    ✓ Installing crash monitoring...
+                  </div>
+                  <div className="text-indigo-600 dark:text-indigo-400 mt-4">
+                    const nadi = require(&apos;nadi-js&apos;);
+                  </div>
+                  <div className="text-indigo-600 dark:text-indigo-400">
+                    nadi.init({'{'}
+                  </div>
+                  <div className="text-indigo-600 dark:text-indigo-400 ml-4">
+                    apiKey: process.env.NADI_API_KEY,
+                  </div>
+                  <div className="text-indigo-600 dark:text-indigo-400 ml-4">
+                    environment: &apos;production&apos;
+                  </div>
+                  <div className="text-indigo-600 dark:text-indigo-400">
+                    {'}'});
+                  </div>
+                  <div className="text-gray-500 dark:text-gray-400 mt-4">
+                    // Your app is now protected! 🛡️
+                  </div>
+                  <div className="text-red-600 dark:text-red-400 mt-4">
+                    ❌ TypeError: Cannot read property &apos;name&apos;
+                  </div>
+                  <div className="text-yellow-600 dark:text-yellow-400">
+                    ⚡ Captured & reported to dashboard
+                  </div>
+                  <div className="text-green-600 dark:text-green-400">
+                    ✅ Team notified via Slack
+                  </div>
+                  <div className="text-blue-600 dark:text-blue-400 animate-pulse">
+                    █
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating Elements */}
+              <div className="absolute -top-4 -right-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-bounce">
+                LIVE
+              </div>
+              <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                0ms latency
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </Container>
+    </section>
   )
 }
