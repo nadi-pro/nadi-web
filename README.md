@@ -1,35 +1,102 @@
-# Salient
+# Nadi Web
 
-Salient is a [Tailwind Plus](https://tailwindcss.com/plus) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+Real-time error tracking and application monitoring platform for developers. This repository contains the marketing website and public-facing interface for Nadi.
 
-## Getting started
+## Overview
 
-To get started with this template, first install the npm dependencies:
+Nadi helps development teams ship with confidence by providing real-time crash reporting, performance monitoring, and actionable insights. This web application showcases the product and provides access to the main application at [app.nadi.pro](https://app.nadi.pro).
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **UI Library**: React 19
+- **Language**: TypeScript 5.8
+- **Styling**: Tailwind CSS 4.1
+- **Components**: Headless UI 2.2
+- **Theme**: next-themes (dark mode support)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or higher
+- npm 9.x or higher
+
+### Installation
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-Next, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Customizing
+## Documentation
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+Comprehensive documentation is available in the `docs/` directory:
+
+- **[Architecture](docs/01-architecture/README.md)** - System design and technical structure
+- **[Development](docs/02-development/README.md)** - Development guides and workflows
+- **[Deployment](docs/03-deployment/README.md)** - Deployment procedures and configuration
+- **[Components](docs/04-components/README.md)** - Component API reference
+
+### Quick Links
+
+- [Getting Started Guide](docs/02-development/01-getting-started.md)
+- [Project Overview](docs/01-architecture/01-overview.md)
+- [Development Workflows](docs/02-development/02-workflows.md)
+- [Component Architecture](docs/01-architecture/03-components.md)
+
+## Available Scripts
+
+```bash
+npm run dev     # Start development server
+npm run build   # Build for production
+npm start       # Start production server
+npm run lint    # Run ESLint
+```
+
+## Project Structure
+
+```text
+nadi-web/
+├── docs/              # Documentation
+├── public/            # Static assets
+├── src/
+│   ├── app/          # Next.js App Router pages
+│   ├── components/   # React components
+│   ├── images/       # Image assets
+│   └── styles/       # Global styles
+└── package.json
+```
+
+## Features
+
+- Server-side rendering with Next.js 15
+- Dark mode support
+- Fully responsive design
+- TypeScript for type safety
+- Tailwind CSS for styling
+- SEO optimized
+
+## Contributing
+
+We welcome contributions! Please read our [Development Workflows](docs/02-development/02-workflows.md) guide before submitting pull requests.
 
 ## License
 
 This site template is a commercial product and is licensed under the [Tailwind Plus license](https://tailwindcss.com/plus/license).
 
-## Learn more
+## Resources
 
-To learn more about the technologies used in this site template, see the following resources:
-
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Headless UI Documentation](https://headlessui.dev)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
