@@ -9,25 +9,25 @@ export function Hero() {
       {/* Animated Code Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:block">
         <div className="absolute top-20 left-10 text-green-500/20 dark:text-green-400/20 text-xs md:text-sm animate-pulse">
-          const nadi = require(&apos;nadi-js&apos;);
+          // .env
           <br />
-          nadi.init({'{'}apiKey: process.env.API_KEY{'}'});
+          NADI_APP_ID=your-app-id
+          <br />
+          NADI_APP_SECRET=your-secret
         </div>
         <div className="absolute top-40 right-20 text-blue-500/20 dark:text-blue-400/20 text-xs md:text-sm animate-pulse delay-1000">
-          try {'{'}
+          // Exceptions caught automatically
           <br />
-          &nbsp;&nbsp;// Your code here
+          throw new Exception(&apos;Oops!&apos;);
           <br />
-          {'}'} catch (error) {'{'}
-          <br />
-          &nbsp;&nbsp;nadi.report(error);
-          <br />
-          {'}'}
+          // ✓ Reported to Nadi
         </div>
         <div className="absolute bottom-40 left-20 text-purple-500/20 dark:text-purple-400/20 text-xs md:text-sm animate-pulse delay-2000">
-          import {'{'} Nadi {'}'} from &apos;@nadi/core&apos;;
+          Route::get(&apos;/&apos;, function () {'{'}
           <br />
-          export default Nadi.configure({'{...}'});
+          &nbsp;&nbsp;return view(&apos;welcome&apos;);
+          <br />
+          {'}'});
         </div>
       </div>
 
@@ -154,42 +154,36 @@ export function Hero() {
                     <div className="w-3 h-3 bg-green-500 rounded-full" />
                   </div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">
-                    nadi-monitor.js
+                    bootstrap.php
                   </div>
                   <div className="w-16" />
                 </div>
 
                 {/* Terminal Content */}
-                <div className="p-6 text-sm space-y-3 bg-white dark:bg-black">
+                <div className="p-6 text-sm space-y-3 bg-white dark:bg-black font-mono">
                   <div className="text-blue-600 dark:text-blue-400">
-                    $ npm install nadi-js
+                    $ composer require nadi-pro/nadi-laravel
                   </div>
-                  <div className="text-gray-500 dark:text-gray-400">
-                    ✓ Installing crash monitoring...
+                  <div className="text-blue-600 dark:text-blue-400 mt-4">
+                    $ php artisan nadi:install
                   </div>
-                  <div className="text-indigo-600 dark:text-indigo-400 mt-4">
-                    const nadi = require(&apos;nadi-js&apos;);
-                  </div>
-                  <div className="text-indigo-600 dark:text-indigo-400">
-                    nadi.init({'{'}
-                  </div>
-                  <div className="text-indigo-600 dark:text-indigo-400 ml-4">
-                    apiKey: process.env.NADI_API_KEY,
-                  </div>
-                  <div className="text-indigo-600 dark:text-indigo-400 ml-4">
-                    environment: &apos;production&apos;
+                  <div className="text-green-600 dark:text-green-400 mt-4">
+                    # Add to .env
                   </div>
                   <div className="text-indigo-600 dark:text-indigo-400">
-                    {'}'});
+                    NADI_APP_ID=your-app-id
+                  </div>
+                  <div className="text-indigo-600 dark:text-indigo-400">
+                    NADI_APP_SECRET=your-app-secret
                   </div>
                   <div className="text-gray-500 dark:text-gray-400 mt-4">
-                    // Your app is now protected! 🛡️
+                    # All exceptions auto-reported! 🛡️
                   </div>
                   <div className="text-red-600 dark:text-red-400 mt-4">
-                    ❌ TypeError: Cannot read property &apos;name&apos;
+                    ❌ Exception caught in UserController
                   </div>
                   <div className="text-yellow-600 dark:text-yellow-400">
-                    ⚡ Captured & reported to dashboard
+                    ⚡ Reported to nadi.pro dashboard
                   </div>
                   <div className="text-green-600 dark:text-green-400">
                     ✅ Team notified via Slack
