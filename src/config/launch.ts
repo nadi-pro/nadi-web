@@ -1,14 +1,22 @@
 /**
  * Launch Configuration for Nadi 2.0
  *
- * Update the LAUNCH_DATE to your actual launch date.
+ * The launch date can be configured via environment variable:
+ * NEXT_PUBLIC_LAUNCH_DATE=2026-01-15T00:00:00
+ *
+ * If not provided, defaults to end of January 2026.
+ *
  * This date is used across the application for:
  * - Countdown timer
  * - Automatic redirects (middleware)
  * - Feature flags
  */
 
-export const LAUNCH_DATE = new Date('2026-01-15T00:00:00')
+// Get launch date from environment variable or use default
+const launchDateString =
+  process.env.NEXT_PUBLIC_LAUNCH_DATE || '2026-01-31T23:59:59'
+
+export const LAUNCH_DATE = new Date(launchDateString)
 
 /**
  * Check if we're currently before the launch date

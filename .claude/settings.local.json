@@ -3,7 +3,8 @@
     "allow": [
       "Bash([ -d docs ])",
       "Bash(tree:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(timeout 10 npm run dev:*)"
     ]
   }
 }

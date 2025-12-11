@@ -60,35 +60,35 @@ export function WhatsNew() {
             icon="🤖"
             title="AI-Powered Insights"
             description="Automatic error grouping, root cause analysis, and intelligent resolution suggestions powered by AI."
-            code="ai.suggestFix(error)"
+            code="Nadi::suggestFix($error)"
           />
 
           <Feature
             icon="🔗"
             title="Universal SDK"
-            description="One SDK for 15+ languages. JavaScript, Python, PHP, Go, Ruby, Java, and more."
-            code="npm install @nadi/sdk"
+            description="Support for Laravel, Symfony, CodeIgniter, WordPress, and native PHP applications."
+            code="composer require nadi-pro/nadi"
           />
 
           <Feature
             icon="📊"
             title="Real-Time Monitoring"
             description="Live performance metrics, custom dashboards, and proactive alerts for your entire stack."
-            code="nadi.track('performance')"
+            code="Nadi::track('performance')"
           />
 
           <Feature
             icon="👥"
             title="Team Collaboration"
             description="Advanced workflows, assignments, comments, and integrations with Slack, Teams, and more."
-            code="team.assign(error, dev)"
+            code="Nadi::assign($error, $dev)"
           />
 
           <Feature
             icon="🔒"
             title="Enterprise Security"
             description="SOC 2 Type II, GDPR compliant, SSO, audit logs, and advanced role-based permissions."
-            code="security.level = 'enterprise'"
+            code="// Enterprise-grade security"
           />
         </div>
 
@@ -112,18 +112,26 @@ export function WhatsNew() {
             {/* Terminal Content */}
             <div className="space-y-3 bg-white p-6 font-mono text-sm dark:bg-black">
               <div className="text-blue-600 dark:text-blue-400">
-                $ npm install @nadi/sdk@2.0.0
+                $ composer require nadi-pro/nadi:^2.0
               </div>
-              <div className="text-green-600 dark:text-green-400">✓ Installed @nadi/sdk@2.0.0</div>
+              <div className="text-green-600 dark:text-green-400">
+                ✓ Package nadi-pro/nadi (2.0.0) installed
+              </div>
 
-              <div className="mt-4 text-blue-600 dark:text-blue-400">$ nadi init</div>
-              <div className="text-gray-600 dark:text-gray-400">? Project name: my-app</div>
+              <div className="mt-4 text-blue-600 dark:text-blue-400">$ php artisan nadi:install</div>
+              <div className="text-gray-600 dark:text-gray-400">Publishing configuration...</div>
+              <div className="text-green-600 dark:text-green-400">✓ Configuration published</div>
               <div className="text-gray-600 dark:text-gray-400">
-                ? Framework: Next.js 15 (detected)
+                Add to your .env file:
               </div>
-              <div className="text-green-600 dark:text-green-400">✓ Configuration created</div>
+              <div className="text-indigo-600 dark:text-indigo-400">
+                NADI_APP_ID=your-app-id
+              </div>
+              <div className="text-indigo-600 dark:text-indigo-400">
+                NADI_APP_SECRET=your-app-secret
+              </div>
 
-              <div className="mt-4 text-blue-600 dark:text-blue-400">$ npm run dev</div>
+              <div className="mt-4 text-blue-600 dark:text-blue-400">$ php artisan serve</div>
               <div className="text-green-600 dark:text-green-400">✓ Connected to Nadi 2.0</div>
               <div className="text-purple-600 dark:text-purple-400">
                 ✓ AI monitoring enabled

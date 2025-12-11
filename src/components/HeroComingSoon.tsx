@@ -16,19 +16,19 @@ export function HeroComingSoon() {
         <div className="absolute left-10 top-20 animate-pulse text-xs text-green-500/20 dark:text-green-400/20 md:text-sm">
           // Nadi 2.0
           <br />
-          const performance = &apos;10x faster&apos;
+          $performance = &apos;10x faster&apos;;
           <br />
-          const ai = &apos;enabled&apos;
+          $ai = &apos;enabled&apos;;
         </div>
         <div className="delay-1000 absolute right-20 top-40 animate-pulse text-xs text-blue-500/20 dark:text-blue-400/20 md:text-sm">
-          // Coming January 2025
+          // Coming January 2026
           <br />
-          await nadi.v2()
+          use NadiPro\Nadi;
           <br />
           // Revolutionary monitoring
         </div>
         <div className="delay-2000 absolute bottom-40 left-20 animate-pulse text-xs text-purple-500/20 dark:text-purple-400/20 md:text-sm">
-          import {'{'} Nadi {'}'} from &apos;@nadi/sdk&apos;
+          Nadi::capture($exception);
           <br />
           // Universal. Powerful. Smart.
         </div>
@@ -43,18 +43,18 @@ export function HeroComingSoon() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
               </span>
-              <span>v2.0.0 // Coming January 2025 🚀</span>
+              <span>v2.0.0 // Coming January 2026 🚀</span>
             </div>
 
             {/* Main Heading */}
             <div className="space-y-6">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-7xl">
-                <span className="block text-gray-900 dark:text-white">await</span>
+                <span className="block text-gray-900 dark:text-white">Nadi::</span>
                 <span className="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                  nadi.v2()
+                  version(2.0)
                 </span>
                 <span className="block text-gray-900 dark:text-white">
-                  // January 2025
+                  // January 2026
                 </span>
               </h1>
               <p className="mx-auto max-w-3xl text-base leading-relaxed text-gray-600 dark:text-gray-300 sm:text-lg md:text-xl">
@@ -129,25 +129,25 @@ export function HeroComingSoon() {
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    AI-powered error grouping and resolution suggestions
+                    AI-powered error grouping dan cadangan penyelesaian
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Universal SDK for 15+ languages and frameworks
+                    Sokongan untuk Laravel, Symfony, CodeIgniter & WordPress
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Real-time performance monitoring and alerts
+                    Real-time performance monitoring dan alerts
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Advanced team collaboration features
+                    Ciri-ciri team collaboration yang lengkap
                   </span>
                 </div>
               </div>

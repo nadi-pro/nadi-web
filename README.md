@@ -24,13 +24,25 @@ Nadi helps development teams ship with confidence by providing real-time crash r
 
 ### Installation
 
-Install dependencies:
+1. Install dependencies:
 
 ```bash
 npm install
 ```
 
-Run the development server:
+2. Configure environment variables (optional):
+
+```bash
+# Copy the example env file
+cp .env.example .env.local
+
+# Edit .env.local and set your launch date
+# NEXT_PUBLIC_LAUNCH_DATE=2026-01-15T00:00:00
+```
+
+If not set, the launch date defaults to **January 31, 2026**.
+
+3. Run the development server:
 
 ```bash
 npm run dev

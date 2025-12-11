@@ -50,52 +50,51 @@ export default function ComingSoonPage() {
               <div className="space-y-8">
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    When exactly will Nadi 2.0 launch?
+                    Bila tarikh sebenar Nadi 2.0 akan dilancarkan?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Nadi 2.0 will launch in January 2025. Sign up to get notified of the exact
-                    date and get early access.
+                    Nadi 2.0 akan dilancarkan pada Januari 2026. Daftar email anda untuk mendapat notifikasi
+                    tarikh sebenar dan akses awal.
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    Will my current Nadi account work with v2.0?
+                    Adakah akaun Nadi saya sekarang boleh digunakan dengan v2.0?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Yes! We&apos;ll provide a seamless migration path for all existing Nadi users.
-                    Your data, settings, and integrations will transfer smoothly.
+                    Ya! Kami akan sediakan proses migrasi yang mudah untuk semua pengguna Nadi.
+                    Data, settings, dan integrations anda akan dipindahkan dengan lancar.
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    What&apos;s the pricing for Nadi 2.0?
+                    Berapakah harga untuk Nadi 2.0?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    We&apos;re introducing new pricing tiers designed to scale with your team.
-                    Current users will get a special upgrade offer. Details coming soon!
+                    Kami memperkenalkan pelan harga baharu yang direka untuk berkembang dengan team anda.
+                    Pengguna semasa akan mendapat tawaran upgrade istimewa. Butiran akan diumumkan tidak lama lagi!
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    Which languages and frameworks are supported?
+                    Framework PHP mana yang disokong?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Nadi 2.0 supports 15+ languages including JavaScript, TypeScript, Python, PHP,
-                    Go, Ruby, Java, .NET, and more. Major frameworks like Next.js, Laravel,
-                    Django, Rails, and Spring are fully supported.
+                    Nadi 2.0 menyokong Laravel, Symfony, CodeIgniter, WordPress, dan native PHP applications.
+                    Monitoring yang lengkap untuk semua framework popular PHP anda.
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    Can I try the beta?
+                    Bolehkah saya cuba beta version?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    We&apos;re running a limited beta program. Sign up with your email to be
-                    considered for early access.
+                    Kami sedang menjalankan program beta terhad. Daftar dengan email anda untuk
+                    dipertimbangkan mendapat akses awal.
                   </p>
                 </div>
               </div>
