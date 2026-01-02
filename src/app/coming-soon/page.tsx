@@ -9,7 +9,7 @@ import { type Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Coming Soon - Nadi 2.0',
   description:
-    'Nadi 2.0 is coming January 2026. The next generation of error tracking with 10x faster processing, smart insights, and universal SDK support.',
+    'Nadi 2.0 is coming January 2026. Multi-tenant application monitoring and issue tracking with real-time error tracking, telemetry collection, and application health monitoring.',
 }
 
 export default function ComingSoonPage() {
@@ -31,8 +31,8 @@ export default function ComingSoonPage() {
                 Be First in Line
               </h2>
               <p className="mb-8 text-lg text-gray-600 dark:text-gray-400">
-                Get exclusive early access to Nadi 2.0 and be among the first to experience the
-                future of error tracking.
+                Get exclusive early access to Nadi 2.0 and be among the first to experience
+                multi-tenant application monitoring and issue tracking.
               </p>
               <EmailCapture variant="card" className="mx-auto max-w-md" />
             </div>
@@ -60,21 +60,11 @@ export default function ComingSoonPage() {
 
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    Can I use my current Nadi account with v2.0?
+                    What is multi-tenant isolation?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Yes! We will provide an easy migration process for all Nadi users.
-                    Your data, settings, and integrations will be transferred seamlessly.
-                  </p>
-                </div>
-
-                <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
-                  <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    What is the pricing for Nadi 2.0?
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    We are introducing new pricing plans designed to scale with your team.
-                    Existing users will receive special upgrade offers. Details will be announced soon!
+                    Nadi uses schema-per-project isolation. Each project gets its own PostgreSQL schema
+                    for storing issues and telemetries, ensuring complete data isolation between projects.
                   </p>
                 </div>
 
@@ -85,6 +75,26 @@ export default function ComingSoonPage() {
                   <p className="text-gray-600 dark:text-gray-400">
                     Nadi 2.0 supports Laravel, Symfony, CodeIgniter, WordPress, and native PHP applications.
                     Complete monitoring for all your popular PHP frameworks.
+                  </p>
+                </div>
+
+                <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
+                  <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
+                    What types of issues can Nadi track?
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    Nadi tracks Exceptions, Database Queries, Queue Jobs, HTTP Requests, Notifications,
+                    Scheduled Tasks, CLI Commands, Authorization Gates, Logs, and Mail failures.
+                  </p>
+                </div>
+
+                <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
+                  <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
+                    How does the Go Collector work?
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    The Go Collector is a high-performance service built with Fiber and GORM. It handles
+                    authentication, rate limiting, batch processing, and multi-tenant routing with OpenTelemetry integration.
                   </p>
                 </div>
 
@@ -110,8 +120,8 @@ export default function ComingSoonPage() {
                 Ready for the Future?
               </h2>
               <p className="mb-8 text-lg text-blue-100">
-                Join thousands of developers preparing for Nadi 2.0. The next generation of error
-                tracking launches January 2026.
+                Join developers preparing for Nadi 2.0. Multi-tenant application monitoring and
+                issue tracking launches January 2026.
               </p>
               <div className="mx-auto max-w-md">
                 <EmailCapture variant="inline" />

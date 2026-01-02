@@ -43,52 +43,52 @@ export function WhatsNew() {
             </span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-            Built from the ground up for modern development teams. Faster, smarter, and more
-            powerful than ever before.
+            Multi-tenant application monitoring built with Laravel 12, Go Collector,
+            and PostgreSQL for complete data isolation.
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <Feature
-            icon="⚡"
-            title="10x Faster Processing"
-            description="New distributed architecture handles millions of errors per second with sub-millisecond latency."
-            code="// Process 10M+ errors/sec"
+            icon="🏢"
+            title="Multi-Tenant Architecture"
+            description="Schema-per-project isolation with PostgreSQL. Each project gets dedicated storage for issues and telemetries."
+            code="// Complete data isolation"
           />
 
           <Feature
-            icon="💡"
-            title="Smart Insights"
-            description="Automatic error grouping, root cause analysis, and intelligent resolution suggestions."
-            code="Nadi::suggestFix($error)"
+            icon="⚡"
+            title="Go Collector"
+            description="High-performance collector built with Go, Fiber, and GORM. Handles authentication, rate limiting, and batch processing."
+            code="POST /record // 1000 req/min"
           />
 
           <Feature
             icon="🔗"
-            title="Universal SDK"
+            title="PHP SDK"
             description="Support for Laravel, Symfony, CodeIgniter, WordPress, and native PHP applications."
             code="composer require nadi-pro/nadi"
           />
 
           <Feature
             icon="📊"
-            title="Real-Time Monitoring"
-            description="Live performance metrics, custom dashboards, and proactive alerts for your entire stack."
-            code="Nadi::track('performance')"
+            title="Issue Tracking"
+            description="Track Exceptions, Queries, Queue Jobs, HTTP, Notifications, Scheduler, Commands, Gates, Logs, and Mail."
+            code="Nadi::capture($exception)"
           />
 
           <Feature
             icon="👥"
-            title="Team Collaboration"
-            description="Advanced workflows, assignments, comments, and integrations with Slack, Teams, and more."
-            code="Nadi::assign($error, $dev)"
+            title="Organization Management"
+            description="Multi-organization support with teams, projects, and applications. Role-based access control included."
+            code="// org → team → project → app"
           />
 
           <Feature
-            icon="🔒"
-            title="Enterprise Security"
-            description="SOC 2 Type II, GDPR compliant, SSO, audit logs, and advanced role-based permissions."
-            code="// Enterprise-grade security"
+            icon="📈"
+            title="OpenTelemetry"
+            description="Built-in observability with metrics, traces, and structured logging. Monitor request counts, duration, and more."
+            code="// Traces & Metrics included"
           />
         </div>
 
@@ -132,12 +132,12 @@ export function WhatsNew() {
               </div>
 
               <div className="mt-4 text-blue-600 dark:text-blue-400">$ php artisan serve</div>
-              <div className="text-green-600 dark:text-green-400">✓ Connected to Nadi 2.0</div>
+              <div className="text-green-600 dark:text-green-400">✓ Connected to Nadi Collector</div>
               <div className="text-purple-600 dark:text-purple-400">
-                ✓ Smart monitoring enabled
+                ✓ Issue tracking enabled
               </div>
               <div className="text-indigo-600 dark:text-indigo-400">
-                ✓ Performance tracking active
+                ✓ Telemetry collection active
               </div>
               <div className="mt-4 text-gray-500 dark:text-gray-400">
                 // Your app is now protected 🛡️

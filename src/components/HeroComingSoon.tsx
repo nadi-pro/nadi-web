@@ -58,17 +58,17 @@ export function HeroComingSoon() {
                 </span>
               </h1>
               <p className="mx-auto max-w-3xl text-base leading-relaxed text-gray-600 dark:text-gray-300 sm:text-lg md:text-xl">
-                The next generation of error tracking is here.{' '}
+                Multi-tenant application monitoring and issue tracking.{' '}
                 <span className="font-semibold text-blue-600 dark:text-blue-400">
-                  10x faster processing
+                  Real-time error tracking
                 </span>
                 ,{' '}
                 <span className="font-semibold text-purple-600 dark:text-purple-400">
-                  smart insights
+                  telemetry collection
                 </span>
                 , and{' '}
                 <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-                  universal SDK support
+                  application health monitoring
                 </span>
                 .
               </p>
@@ -95,18 +95,18 @@ export function HeroComingSoon() {
               <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 sm:grid-cols-3">
                 <div className="rounded-xl border border-gray-200 bg-white/50 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-900/50">
                   <div className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-                    10x
+                    Go
                   </div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">
-                    faster processing
+                    high-performance collector
                   </div>
                 </div>
                 <div className="rounded-xl border border-gray-200 bg-white/50 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-900/50">
                   <div className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-                    15+
+                    Multi
                   </div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">
-                    languages supported
+                    tenant isolation
                   </div>
                 </div>
                 <div className="rounded-xl border border-gray-200 bg-white/50 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-900/50">
@@ -129,7 +129,7 @@ export function HeroComingSoon() {
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Smart error grouping and resolution suggestions
+                    Schema-per-project multi-tenant isolation
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
@@ -141,13 +141,13 @@ export function HeroComingSoon() {
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Real-time performance monitoring and alerts
+                    Go-based Collector with rate limiting and batch processing
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Complete team collaboration features
+                    OpenTelemetry integration for observability
                   </span>
                 </div>
               </div>

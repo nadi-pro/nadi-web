@@ -15,8 +15,8 @@ export function PrimaryFeatures() {
             </span>
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-            Every feature designed to make debugging faster, deployment safer,
-            and development more enjoyable.
+            Multi-tenant application monitoring with real-time error tracking,
+            telemetry collection, and complete data isolation.
           </p>
         </div>
 
@@ -31,9 +31,9 @@ export function PrimaryFeatures() {
                 </span>
               </h3>
               <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-                Turn every crash into actionable intelligence. Our platform
-                doesn&apos;t just catch bugs—it gives you the context to fix
-                them fast.
+                Capture issues from your PHP applications and view them in a
+                unified dashboard. Complete stack traces, context, and
+                telemetry data.
               </p>
 
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
@@ -42,37 +42,37 @@ export function PrimaryFeatures() {
                     <div className="absolute left-0 top-1 flex h-6 w-6 items-center justify-center rounded-lg bg-blue-600">
                       <span className="text-white text-xs">{'}'}</span>
                     </div>
-                    realtime_dashboard()
+                    multi_tenant()
                   </dt>
                   <dd className="inline">
-                    Monitor all apps from a unified console. Live metrics,
-                    customizable widgets, zero configuration needed.
+                    Schema-per-project isolation with PostgreSQL. Each project
+                    gets dedicated storage for complete data separation.
                   </dd>
                 </div>
 
                 <div className="relative pl-9">
                   <dt className="inline font-semibold text-gray-900 dark:text-white">
                     <div className="absolute left-0 top-1 flex h-6 w-6 items-center justify-center rounded-lg bg-indigo-600">
-                      <span className="text-white text-xs">!</span>
+                      <span className="text-white text-xs">⚡</span>
                     </div>
-                    smart_alerts()
+                    go_collector()
                   </dt>
                   <dd className="inline">
-                    Intelligent notifications via Slack, Discord, or email. Only
-                    the alerts that matter, when they matter.
+                    High-performance Go service with Fiber and GORM. Rate
+                    limiting, batch processing, and OpenTelemetry built-in.
                   </dd>
                 </div>
 
                 <div className="relative pl-9">
                   <dt className="inline font-semibold text-gray-900 dark:text-white">
                     <div className="absolute left-0 top-1 flex h-6 w-6 items-center justify-center rounded-lg bg-purple-600">
-                      <span className="text-white text-xs">💡</span>
+                      <span className="text-white text-xs">📊</span>
                     </div>
-                    smart_insights()
+                    issue_tracking()
                   </dt>
                   <dd className="inline">
-                    Intelligent root cause analysis. Predict issues before they
-                    happen. Automated solutions for common problems.
+                    Track Exceptions, Queries, Queue Jobs, HTTP, Notifications,
+                    Scheduler, Commands, Gates, Logs, and Mail.
                   </dd>
                 </div>
               </dl>
@@ -99,32 +99,35 @@ export function PrimaryFeatures() {
                 {/* Terminal Content */}
                 <div className="p-6 text-sm bg-white dark:bg-black">
                   <div className="text-blue-600 dark:text-blue-400 mb-2">
-                    ● Live Feed
+                    ● Issues Feed
                   </div>
                   <div className="space-y-2 text-xs">
                     <div className="text-red-600 dark:text-red-400">
-                      ✗ TypeError: user.profile.avatar
+                      ✗ Exception: Call to undefined function
                     </div>
                     <div className="text-gray-500 dark:text-gray-400 ml-4">
-                      auth/profile.js:42
+                      HomeController.php:42
                     </div>
                     <div className="text-gray-500 dark:text-gray-400 ml-4">
-                      affected: 1,247 users
+                      type: Exception | Laravel 12
                     </div>
                     <div className="text-yellow-600 dark:text-yellow-400 mt-2">
-                      ▲ Auto-fix suggested
-                    </div>
-                    <div className="text-blue-600 dark:text-blue-400 mt-3">
-                      ◆ Performance spike detected
+                      ▲ Query: slow query detected
                     </div>
                     <div className="text-gray-500 dark:text-gray-400 ml-4">
-                      api/users.php +2.3s
+                      UserRepository.php +2.3s
+                    </div>
+                    <div className="text-indigo-600 dark:text-indigo-400 mt-3">
+                      ◆ Queue: job failed
+                    </div>
+                    <div className="text-gray-500 dark:text-gray-400 ml-4">
+                      SendEmailJob | attempts: 3
                     </div>
                     <div className="text-green-600 dark:text-green-400 mt-3">
-                      ✓ Deploy completed
+                      ✓ Connected to tenant schema
                     </div>
                     <div className="text-gray-500 dark:text-gray-400 ml-4">
-                      v2.1.0 → production
+                      nadi_proj_abc12345
                     </div>
                     <div className="text-blue-600 dark:text-blue-400 animate-pulse mt-3">
                       █
@@ -203,11 +206,11 @@ export function PrimaryFeatures() {
                 <span className="text-white text-lg font-bold">◇</span>
               </div>
               <h3 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                sdk.install()
+                php_sdk.install()
               </h3>
               <p className="mt-4 text-gray-600 dark:text-gray-300 text-sm">
-                One line of code, any framework. Laravel, Node.js, Python, PHP,
-                React—we speak your language. Get started in under 60 seconds.
+                One line of code for PHP frameworks. Laravel, Symfony,
+                CodeIgniter, WordPress, and native PHP supported.
               </p>
             </div>
 
@@ -217,11 +220,11 @@ export function PrimaryFeatures() {
                 <span className="text-white text-lg font-bold">◉</span>
               </div>
               <h3 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
-                security.enforce()
+                auth.secure()
               </h3>
               <p className="mt-4 text-gray-600 dark:text-gray-300 text-sm">
-                SOC 2 compliant, encrypted at rest and in transit. Role-based
-                access, audit trails. Your code stays yours, period.
+                App ID + Secret authentication. Laravel Sanctum for dashboard.
+                Rate limiting and complete schema isolation.
               </p>
             </div>
           </div>
