@@ -129,57 +129,63 @@ export function WhatsNew() {
           />
         </div>
 
-        {/* Terminal Demo */}
+        {/* How It Works */}
         <div className="mt-16">
-          <h3 className="mb-6 text-center text-2xl font-bold text-gray-900 dark:text-white">
-            Setup in Seconds
+          <h3 className="mb-12 text-center text-2xl font-bold text-gray-900 dark:text-white">
+            How It Works
           </h3>
-          <div className="mx-auto max-w-3xl overflow-hidden rounded-2xl border border-gray-300 bg-gray-100 dark:border-gray-700 dark:bg-gray-900">
-            {/* Terminal Header */}
-            <div className="flex items-center justify-between border-b border-gray-300 bg-gray-200 px-4 py-3 dark:border-gray-700 dark:bg-gray-800">
-              <div className="flex space-x-2">
-                <div className="h-3 w-3 rounded-full bg-red-500" />
-                <div className="h-3 w-3 rounded-full bg-yellow-500" />
-                <div className="h-3 w-3 rounded-full bg-green-500" />
-              </div>
-              <div className="text-sm text-gray-600 dark:text-gray-400">nadi-setup.sh</div>
-              <div className="w-16" />
-            </div>
-
-            {/* Terminal Content */}
-            <div className="space-y-3 bg-white p-6 font-mono text-sm dark:bg-black">
-              <div className="text-blue-600 dark:text-blue-400">
-                $ composer require nadi-pro/nadi:^2.0
-              </div>
-              <div className="text-green-600 dark:text-green-400">
-                ✓ Package nadi-pro/nadi (2.0.0) installed
-              </div>
-
-              <div className="mt-4 text-blue-600 dark:text-blue-400">$ php artisan nadi:install</div>
-              <div className="text-gray-600 dark:text-gray-400">Publishing configuration...</div>
-              <div className="text-green-600 dark:text-green-400">✓ Configuration published</div>
-              <div className="text-gray-600 dark:text-gray-400">
-                Add to your .env file:
-              </div>
-              <div className="text-indigo-600 dark:text-indigo-400">
-                NADI_APP_ID=your-app-id
-              </div>
-              <div className="text-indigo-600 dark:text-indigo-400">
-                NADI_APP_SECRET=your-app-secret
+          <div className="mx-auto max-w-4xl">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+              {/* Step 1 */}
+              <div className="relative text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/30">
+                  <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">1</span>
+                </div>
+                <h4 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+                  Connect Your App
+                </h4>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Add Nadi to your project with a simple install. Works with any PHP framework.
+                </p>
+                {/* Arrow */}
+                <div className="absolute right-0 top-8 hidden -translate-y-1/2 translate-x-1/2 text-gray-300 dark:text-gray-700 md:block">
+                  <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
 
-              <div className="mt-4 text-blue-600 dark:text-blue-400">$ php artisan serve</div>
-              <div className="text-green-600 dark:text-green-400">✓ Connected to Nadi Collector</div>
-              <div className="text-purple-600 dark:text-purple-400">
-                ✓ Issue tracking enabled
+              {/* Step 2 */}
+              <div className="relative text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-purple-100 dark:bg-purple-900/30">
+                  <span className="text-2xl font-bold text-purple-600 dark:text-purple-400">2</span>
+                </div>
+                <h4 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+                  Errors Get Captured
+                </h4>
+                <p className="text-gray-600 dark:text-gray-400">
+                  When something breaks, Nadi catches it automatically with full details.
+                </p>
+                {/* Arrow */}
+                <div className="absolute right-0 top-8 hidden -translate-y-1/2 translate-x-1/2 text-gray-300 dark:text-gray-700 md:block">
+                  <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
-              <div className="text-indigo-600 dark:text-indigo-400">
-                ✓ Telemetry collection active
+
+              {/* Step 3 */}
+              <div className="text-center">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
+                  <span className="text-2xl font-bold text-green-600 dark:text-green-400">3</span>
+                </div>
+                <h4 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+                  Fix It Fast
+                </h4>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Get alerted instantly, see what went wrong, and resolve issues before users notice.
+                </p>
               </div>
-              <div className="mt-4 text-gray-500 dark:text-gray-400">
-                // Your app is now protected
-              </div>
-              <div className="animate-pulse text-blue-600 dark:text-blue-400">█</div>
             </div>
           </div>
         </div>
