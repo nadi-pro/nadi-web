@@ -18,7 +18,7 @@ export function HeroComingSoon() {
           <br />
           $performance = &apos;10x faster&apos;;
           <br />
-          $ai = &apos;enabled&apos;;
+          $monitoring = &apos;enabled&apos;;
         </div>
         <div className="delay-1000 absolute right-20 top-40 animate-pulse text-xs text-blue-500/20 dark:text-blue-400/20 md:text-sm">
           // Coming January 2026
@@ -64,7 +64,7 @@ export function HeroComingSoon() {
                 </span>
                 ,{' '}
                 <span className="font-semibold text-purple-600 dark:text-purple-400">
-                  AI-powered insights
+                  smart insights
                 </span>
                 , and{' '}
                 <span className="font-semibold text-indigo-600 dark:text-indigo-400">
@@ -111,10 +111,10 @@ export function HeroComingSoon() {
                 </div>
                 <div className="rounded-xl border border-gray-200 bg-white/50 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-900/50">
                   <div className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-                    AI
+                    24/7
                   </div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">
-                    powered insights
+                    real-time monitoring
                   </div>
                 </div>
               </div>
@@ -129,25 +129,25 @@ export function HeroComingSoon() {
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    AI-powered error grouping dan cadangan penyelesaian
+                    Smart error grouping and resolution suggestions
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Sokongan untuk Laravel, Symfony, CodeIgniter & WordPress
+                    Support for Laravel, Symfony, CodeIgniter & WordPress
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Real-time performance monitoring dan alerts
+                    Real-time performance monitoring and alerts
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Ciri-ciri team collaboration yang lengkap
+                    Complete team collaboration features
                   </span>
                 </div>
               </div>

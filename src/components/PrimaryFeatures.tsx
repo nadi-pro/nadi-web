@@ -66,12 +66,12 @@ export function PrimaryFeatures() {
                 <div className="relative pl-9">
                   <dt className="inline font-semibold text-gray-900 dark:text-white">
                     <div className="absolute left-0 top-1 flex h-6 w-6 items-center justify-center rounded-lg bg-purple-600">
-                      <span className="text-white text-xs">AI</span>
+                      <span className="text-white text-xs">💡</span>
                     </div>
-                    ai_powered_insights()
+                    smart_insights()
                   </dt>
                   <dd className="inline">
-                    ML-driven root cause analysis. Predict issues before they
+                    Intelligent root cause analysis. Predict issues before they
                     happen. Automated solutions for common problems.
                   </dd>
                 </div>

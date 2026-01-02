@@ -57,9 +57,9 @@ export function WhatsNew() {
           />
 
           <Feature
-            icon="🤖"
-            title="AI-Powered Insights"
-            description="Automatic error grouping, root cause analysis, and intelligent resolution suggestions powered by AI."
+            icon="💡"
+            title="Smart Insights"
+            description="Automatic error grouping, root cause analysis, and intelligent resolution suggestions."
             code="Nadi::suggestFix($error)"
           />
 
@@ -134,7 +134,7 @@ export function WhatsNew() {
               <div className="mt-4 text-blue-600 dark:text-blue-400">$ php artisan serve</div>
               <div className="text-green-600 dark:text-green-400">✓ Connected to Nadi 2.0</div>
               <div className="text-purple-600 dark:text-purple-400">
-                ✓ AI monitoring enabled
+                ✓ Smart monitoring enabled
               </div>
               <div className="text-indigo-600 dark:text-indigo-400">
                 ✓ Performance tracking active

@@ -9,7 +9,7 @@ import { type Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Coming Soon - Nadi 2.0',
   description:
-    'Nadi 2.0 is coming January 2025. The next generation of error tracking with 10x faster processing, AI-powered insights, and universal SDK support.',
+    'Nadi 2.0 is coming January 2026. The next generation of error tracking with 10x faster processing, smart insights, and universal SDK support.',
 }
 
 export default function ComingSoonPage() {
@@ -50,51 +50,51 @@ export default function ComingSoonPage() {
               <div className="space-y-8">
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    Bila tarikh sebenar Nadi 2.0 akan dilancarkan?
+                    When exactly will Nadi 2.0 launch?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Nadi 2.0 akan dilancarkan pada Januari 2026. Daftar email anda untuk mendapat notifikasi
-                    tarikh sebenar dan akses awal.
+                    Nadi 2.0 will launch in January 2026. Sign up with your email to receive notifications
+                    about the exact date and early access.
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    Adakah akaun Nadi saya sekarang boleh digunakan dengan v2.0?
+                    Can I use my current Nadi account with v2.0?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Ya! Kami akan sediakan proses migrasi yang mudah untuk semua pengguna Nadi.
-                    Data, settings, dan integrations anda akan dipindahkan dengan lancar.
+                    Yes! We will provide an easy migration process for all Nadi users.
+                    Your data, settings, and integrations will be transferred seamlessly.
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    Berapakah harga untuk Nadi 2.0?
+                    What is the pricing for Nadi 2.0?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Kami memperkenalkan pelan harga baharu yang direka untuk berkembang dengan team anda.
-                    Pengguna semasa akan mendapat tawaran upgrade istimewa. Butiran akan diumumkan tidak lama lagi!
+                    We are introducing new pricing plans designed to scale with your team.
+                    Existing users will receive special upgrade offers. Details will be announced soon!
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    Framework PHP mana yang disokong?
+                    Which PHP frameworks are supported?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Nadi 2.0 menyokong Laravel, Symfony, CodeIgniter, WordPress, dan native PHP applications.
-                    Monitoring yang lengkap untuk semua framework popular PHP anda.
+                    Nadi 2.0 supports Laravel, Symfony, CodeIgniter, WordPress, and native PHP applications.
+                    Complete monitoring for all your popular PHP frameworks.
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
                   <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">
-                    Bolehkah saya cuba beta version?
+                    Can I try the beta version?
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Kami sedang menjalankan program beta terhad. Daftar dengan email anda untuk
-                    dipertimbangkan mendapat akses awal.
+                    We are running a limited beta program. Sign up with your email to be
+                    considered for early access.
                   </p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function ComingSoonPage() {
               </h2>
               <p className="mb-8 text-lg text-blue-100">
                 Join thousands of developers preparing for Nadi 2.0. The next generation of error
-                tracking launches January 2025.
+                tracking launches January 2026.
               </p>
               <div className="mx-auto max-w-md">
                 <EmailCapture variant="inline" />

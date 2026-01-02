@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import {
   Popover,
@@ -13,6 +14,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
+import { isLaunched } from '@/config/launch'
 
 function MobileNavLink({
   href,
@@ -55,7 +57,7 @@ function MobileNavIcon({ open }: { open: boolean }) {
   )
 }
 
-function MobileNavigation() {
+function MobileNavigation({ showAuthButtons }: { showAuthButtons: boolean }) {
   return (
     <Popover>
       <PopoverButton
@@ -75,14 +77,25 @@ function MobileNavigation() {
         <MobileNavLink href="#features">Features</MobileNavLink>
         <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
         <MobileNavLink href="#pricing">Pricing</MobileNavLink>
-        <hr className="m-2 border-slate-300/40" />
-        <MobileNavLink href="/login">Sign in</MobileNavLink>
+        {showAuthButtons && (
+          <>
+            <hr className="m-2 border-slate-300/40" />
+            <MobileNavLink href="/login">Sign in</MobileNavLink>
+          </>
+        )}
       </PopoverPanel>
     </Popover>
   )
 }
 
 export function Header() {
+  const [showAuthButtons, setShowAuthButtons] = useState(false)
+
+  useEffect(() => {
+    // Check launch status on client to avoid hydration mismatch
+    setShowAuthButtons(isLaunched())
+  }, [])
+
   return (
     <header className="py-10">
       <Container>
@@ -98,16 +111,20 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <div className="hidden md:block">
-              <NavLink href="/login">Sign in</NavLink>
-            </div>
-            <Button href="/register" color="blue">
-              <span>
-                Get started <span className="hidden lg:inline">today</span>
-              </span>
-            </Button>
+            {showAuthButtons && (
+              <>
+                <div className="hidden md:block">
+                  <NavLink href="/login">Sign in</NavLink>
+                </div>
+                <Button href="/register" color="blue">
+                  <span>
+                    Get started <span className="hidden lg:inline">today</span>
+                  </span>
+                </Button>
+              </>
+            )}
             <div className="-mr-1 md:hidden">
-              <MobileNavigation />
+              <MobileNavigation showAuthButtons={showAuthButtons} />
             </div>
           </div>
         </nav>

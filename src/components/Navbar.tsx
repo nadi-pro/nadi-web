@@ -1,11 +1,18 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { DarkModeToggle } from './DarkModeToggle'
+import { isLaunched } from '@/config/launch'
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [showAuthButtons, setShowAuthButtons] = useState(false)
+
+  useEffect(() => {
+    // Check launch status on client to avoid hydration mismatch
+    setShowAuthButtons(isLaunched())
+  }, [])
 
   return (
     <header className="sticky top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-xl border-b border-gray-200/20 dark:border-gray-800/20">
@@ -70,21 +77,23 @@ export function Navbar() {
             {/* Dark Mode Toggle */}
             <DarkModeToggle />
 
-            {/* Auth Buttons */}
-            <div className="hidden sm:flex sm:items-center sm:space-x-3">
-              <Link
-                href="https://app.nadi.pro/login"
-                className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white font-medium transition-colors duration-200"
-              >
-                login()
-              </Link>
-              <Link
-                href="https://app.nadi.pro/register"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-950 transition-all duration-200 transform hover:scale-105"
-              >
-                start()
-              </Link>
-            </div>
+            {/* Auth Buttons - Only shown after launch */}
+            {showAuthButtons && (
+              <div className="hidden sm:flex sm:items-center sm:space-x-3">
+                <Link
+                  href="https://app.nadi.pro/login"
+                  className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white font-medium transition-colors duration-200"
+                >
+                  login()
+                </Link>
+                <Link
+                  href="https://app.nadi.pro/register"
+                  className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-950 transition-all duration-200 transform hover:scale-105"
+                >
+                  start()
+                </Link>
+              </div>
+            )}
 
             {/* Mobile Menu Button */}
             <button
@@ -147,20 +156,23 @@ export function Navbar() {
               >
                 .about()
               </a>
-              <div className="border-t border-gray-200 dark:border-gray-800 pt-3 mt-3">
-                <Link
-                  href="https://app.nadi.pro/login"
-                  className="block px-3 py-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200"
-                >
-                  login()
-                </Link>
-                <Link
-                  href="https://app.nadi.pro/register"
-                  className="block px-3 py-2 mt-2 text-center text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg transition-all duration-200"
-                >
-                  start()
-                </Link>
-              </div>
+              {/* Mobile Auth Buttons - Only shown after launch */}
+              {showAuthButtons && (
+                <div className="border-t border-gray-200 dark:border-gray-800 pt-3 mt-3">
+                  <Link
+                    href="https://app.nadi.pro/login"
+                    className="block px-3 py-2 text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200"
+                  >
+                    login()
+                  </Link>
+                  <Link
+                    href="https://app.nadi.pro/register"
+                    className="block px-3 py-2 mt-2 text-center text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg transition-all duration-200"
+                  >
+                    start()
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         )}
