@@ -20,13 +20,14 @@ const tiers = [
     name: 'Free',
     price: '$0',
     period: 'forever',
-    description: 'Perfect for side projects and trying out Nadi.',
+    description: 'Everything you need to get started. No credit card required.',
     features: [
-      '1 project',
-      '1,000 errors per month',
-      '7-day data retention',
+      '3 projects',
+      '10,000 errors per month',
+      '14-day data retention',
       'Email notifications',
-      'Basic stack traces',
+      'Full stack traces',
+      'Team collaboration (2 members)',
       'Community support',
     ],
     cta: 'Get Started Free',
@@ -34,16 +35,16 @@ const tiers = [
   },
   {
     name: 'Pro',
-    price: '$29',
+    price: '$19',
     period: 'per month',
     description: 'For professional developers and growing teams.',
     features: [
       'Unlimited projects',
-      '50,000 errors per month',
-      '30-day data retention',
-      'Slack & email notifications',
+      '100,000 errors per month',
+      '90-day data retention',
+      'Slack, Discord & email notifications',
       'Full stack traces with context',
-      'Team collaboration (5 members)',
+      'Team collaboration (10 members)',
       'Priority email support',
       'Performance monitoring',
     ],
@@ -64,7 +65,6 @@ const tiers = [
       'SSO & SAML',
       'Dedicated support',
       'SLA guarantee',
-      'On-premise option',
     ],
     cta: 'Contact Sales',
     highlighted: false,
@@ -72,6 +72,10 @@ const tiers = [
 ]
 
 const faqs = [
+  {
+    question: 'Is the Free plan really free?',
+    answer: 'Yes! The Free plan is free forever with no credit card required. You get 3 projects, 10,000 errors per month, and 14-day data retention.',
+  },
   {
     question: 'Can I switch plans anytime?',
     answer: 'Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.',
