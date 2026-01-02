@@ -1,10 +1,19 @@
+'use client'
+
 import { CountdownTimer } from './CountdownTimer'
 import { EmailCapture } from './EmailCapture'
 import { LAUNCH_DATE } from '@/config/launch'
+import { isNotifyMeAvailable } from '@/config/notify'
+import { useState, useEffect } from 'react'
 
 export function HeroComingSoon() {
   // Launch date is centralized in src/config/launch.ts
   const launchDate = LAUNCH_DATE
+  const [showEmailCapture, setShowEmailCapture] = useState(false)
+
+  useEffect(() => {
+    setShowEmailCapture(isNotifyMeAvailable())
+  }, [])
 
   return (
     <section className="relative min-h-screen overflow-hidden bg-white dark:bg-gray-950">
@@ -82,13 +91,15 @@ export function HeroComingSoon() {
               <CountdownTimer targetDate={launchDate} />
             </div>
 
-            {/* Email Capture */}
-            <div className="mx-auto max-w-xl">
-              <EmailCapture variant="inline" />
-              <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
-                // Join 2,000+ developers waiting for v2.0
-              </p>
-            </div>
+            {/* Email Capture - Only shown when enabled */}
+            {showEmailCapture && (
+              <div className="mx-auto max-w-xl">
+                <EmailCapture variant="inline" />
+                <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+                  // Get notified when Nadi 2.0 launches
+                </p>
+              </div>
+            )}
 
             {/* Trust Indicators */}
             <div className="pt-12">

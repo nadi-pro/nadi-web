@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { isNotifyMeAvailable, subscribeEmail } from '@/config/notify'
 
 interface EmailCaptureProps {
   variant?: 'inline' | 'card'
@@ -11,30 +12,32 @@ export function EmailCapture({ variant = 'inline', className = '' }: EmailCaptur
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [message, setMessage] = useState('')
+  const [isAvailable, setIsAvailable] = useState(false)
+
+  useEffect(() => {
+    // Check if feature is available on client side
+    setIsAvailable(isNotifyMeAvailable())
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('loading')
 
-    try {
-      // TODO: Replace with your actual API endpoint
-      // For now, we'll simulate a successful submission
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+    const result = await subscribeEmail(email)
 
-      // Example API call:
-      // const response = await fetch('/api/subscribe', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email }),
-      // })
-
+    if (result.success) {
       setStatus('success')
-      setMessage('Thanks! We\'ll notify you when Nadi 2.0 launches.')
+      setMessage(result.message)
       setEmail('')
-    } catch (error) {
+    } else {
       setStatus('error')
-      setMessage('Oops! Something went wrong. Please try again.')
+      setMessage(result.message)
     }
+  }
+
+  // Don't render if feature is not available
+  if (!isAvailable) {
+    return null
   }
 
   if (status === 'success') {
