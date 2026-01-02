@@ -53,7 +53,7 @@ export function PrimaryFeatures() {
                 <div className="relative pl-9">
                   <dt className="inline font-semibold text-gray-900 dark:text-white">
                     <div className="absolute left-0 top-1 flex h-6 w-6 items-center justify-center rounded-lg bg-indigo-600">
-                      <span className="text-white text-xs">⚡</span>
+                      <span className="text-white text-xs font-bold">//</span>
                     </div>
                     go_collector()
                   </dt>
@@ -66,7 +66,7 @@ export function PrimaryFeatures() {
                 <div className="relative pl-9">
                   <dt className="inline font-semibold text-gray-900 dark:text-white">
                     <div className="absolute left-0 top-1 flex h-6 w-6 items-center justify-center rounded-lg bg-purple-600">
-                      <span className="text-white text-xs">📊</span>
+                      <span className="text-white text-xs font-bold">++</span>
                     </div>
                     issue_tracking()
                   </dt>
@@ -175,7 +175,7 @@ export function PrimaryFeatures() {
             {/* Feature 3 */}
             <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-900 p-8 ring-1 ring-gray-200 dark:ring-gray-800 transition-all duration-300 hover:-translate-y-1">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-purple-500 to-purple-600">
-                <span className="text-white text-lg font-bold">⚡</span>
+                <span className="text-white text-lg font-bold">&gt;</span>
               </div>
               <h3 className="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
                 realtime.detect()

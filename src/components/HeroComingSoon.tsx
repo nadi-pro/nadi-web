@@ -52,7 +52,7 @@ export function HeroComingSoon() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500" />
               </span>
-              <span>v2.0.0 // Coming January 2026 🚀</span>
+              <span>v2.0.0 // Coming January 2026</span>
             </div>
 
             {/* Main Heading */}
@@ -67,17 +67,17 @@ export function HeroComingSoon() {
                 </span>
               </h1>
               <p className="mx-auto max-w-3xl text-base leading-relaxed text-gray-600 dark:text-gray-300 sm:text-lg md:text-xl">
-                Multi-tenant application monitoring and issue tracking.{' '}
+                Stop hunting for bugs in production.{' '}
                 <span className="font-semibold text-blue-600 dark:text-blue-400">
-                  Real-time error tracking
+                  Catch errors instantly
                 </span>
                 ,{' '}
                 <span className="font-semibold text-purple-600 dark:text-purple-400">
-                  telemetry collection
+                  debug faster
                 </span>
                 , and{' '}
                 <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-                  application health monitoring
+                  ship with confidence
                 </span>
                 .
               </p>
@@ -106,26 +106,26 @@ export function HeroComingSoon() {
               <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 sm:grid-cols-3">
                 <div className="rounded-xl border border-gray-200 bg-white/50 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-900/50">
                   <div className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-                    Go
+                    5 min
                   </div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">
-                    high-performance collector
+                    setup time
                   </div>
                 </div>
                 <div className="rounded-xl border border-gray-200 bg-white/50 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-900/50">
                   <div className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-                    Multi
+                    Real-time
                   </div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">
-                    tenant isolation
+                    error alerts
                   </div>
                 </div>
                 <div className="rounded-xl border border-gray-200 bg-white/50 p-6 backdrop-blur-sm dark:border-gray-800 dark:bg-gray-900/50">
                   <div className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-                    24/7
+                    100%
                   </div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">
-                    real-time monitoring
+                    PHP focused
                   </div>
                 </div>
               </div>
@@ -134,31 +134,31 @@ export function HeroComingSoon() {
             {/* What's Different */}
             <div className="mx-auto max-w-2xl rounded-2xl border border-blue-200 bg-gradient-to-r from-blue-50 to-purple-50 p-8 dark:border-blue-800/50 dark:from-blue-900/20 dark:to-purple-900/20">
               <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">
-                What makes v2.0 different?
+                Why developers love Nadi
               </h3>
               <div className="space-y-3 text-left">
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Schema-per-project multi-tenant isolation
+                    Know about bugs before your users complain
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Support for Laravel, Symfony, CodeIgniter & WordPress
+                    Setup in under 5 minutes with Laravel, Symfony & more
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    Go-based Collector with rate limiting and batch processing
+                    See exactly what went wrong with full stack traces
                   </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 dark:text-blue-400">✓</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    OpenTelemetry integration for observability
+                    Sleep better knowing your app is being monitored 24/7
                   </span>
                 </div>
               </div>
