@@ -9,7 +9,15 @@ export function middleware(request: NextRequest) {
 
   // Routes that should always be accessible (bypass coming-soon redirect)
   // Note: /login and /register are NOT allowed before launch
-  const allowedRoutes = ['/coming-soon', '/api', '/_next', '/favicon.ico']
+  const allowedRoutes = [
+    '/coming-soon',
+    '/features',
+    '/pricing',
+    '/about',
+    '/api',
+    '/_next',
+    '/favicon.ico',
+  ]
 
   // Check if current path is in allowed routes
   const isAllowedRoute = allowedRoutes.some((route) => pathname.startsWith(route))

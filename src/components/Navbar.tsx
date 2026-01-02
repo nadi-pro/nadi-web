@@ -51,24 +51,24 @@ export function Navbar() {
 
             {/* Navigation Links (hidden on mobile) */}
             <div className="hidden lg:flex lg:space-x-8">
-              <a
-                href="#features"
+              <Link
+                href="/features"
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 font-medium transition-colors duration-200"
               >
-                .features()
-              </a>
-              <a
-                href="#pricing"
+                Features
+              </Link>
+              <Link
+                href="/pricing"
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 font-medium transition-colors duration-200"
               >
-                .pricing()
-              </a>
-              <a
-                href="#about"
+                Pricing
+              </Link>
+              <Link
+                href="/about"
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 font-medium transition-colors duration-200"
               >
-                .about()
-              </a>
+                About
+              </Link>
             </div>
           </div>
 
@@ -138,24 +138,24 @@ export function Navbar() {
         {mobileMenuOpen && (
           <div className="lg:hidden border-t border-gray-200 dark:border-gray-800 animate-slideDown">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a
-                href="#features"
+              <Link
+                href="/features"
                 className="block px-3 py-2 text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200"
               >
-                .features()
-              </a>
-              <a
-                href="#pricing"
+                Features
+              </Link>
+              <Link
+                href="/pricing"
                 className="block px-3 py-2 text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200"
               >
-                .pricing()
-              </a>
-              <a
-                href="#about"
+                Pricing
+              </Link>
+              <Link
+                href="/about"
                 className="block px-3 py-2 text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-200"
               >
-                .about()
-              </a>
+                About
+              </Link>
               {/* Mobile Auth Buttons - Only shown after launch */}
               {showAuthButtons && (
                 <div className="border-t border-gray-200 dark:border-gray-800 pt-3 mt-3">
